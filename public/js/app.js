@@ -9,7 +9,6 @@ const getFetch = () => {
       .then(function(data) { 
         for (let i = 0; i < cantPaises; i++) {
           let paisAleatorio = data[NumerosAleatorios(1, 250)];
-          console.log(data[NumerosAleatorios(1, 250)].name.common)
           mainContent.innerHTML += `<pais-component name="${paisAleatorio.name.common}" capital="${paisAleatorio.capital[0]}" poblacion="${paisAleatorio.population}" subregion="${paisAleatorio.subregion}" region="${paisAleatorio.region}" imagen="${paisAleatorio.flags.png}" continente="${paisAleatorio.continents[0]}" maps="${paisAleatorio.maps.googleMaps}"></pais-component>`
         }
       })
