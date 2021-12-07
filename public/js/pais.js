@@ -120,6 +120,7 @@ class Pais extends HTMLElement {
 
             .imgPaisModal {
                 box-shadow: 0 0 5px #888;
+                width: 100%;
             }
 
             #closeModal {
